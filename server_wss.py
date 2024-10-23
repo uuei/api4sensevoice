@@ -28,7 +28,7 @@ logger.add(sys.stderr, format=log_format, level="ERROR", filter=lambda record: r
 
 
 class Config(BaseSettings):
-    sv_thr: float = Field(0.23, description="Speaker verification threshold")
+    sv_thr: float = Field(0.3, description="Speaker verification threshold")
     chunk_size_ms: int = Field(300, description="Chunk size in milliseconds")
     sample_rate: int = Field(16000, description="Sample rate in Hz")
     bit_depth: int = Field(16, description="Bit depth")
